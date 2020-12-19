@@ -1,0 +1,5 @@
+app/dist/
+dist/
+node_modules/
+.vscode
+*.log

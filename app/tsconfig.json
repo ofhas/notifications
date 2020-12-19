@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "esModuleInterop": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+  },
+  "include": [
+    "./src/**/*",
+    "./public/**/*.jpg"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.tsx"
+  ]
+}

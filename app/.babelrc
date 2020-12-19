@@ -1,0 +1,4 @@
+{
+  "extends": "plugin:react-hooks/recommended",
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}

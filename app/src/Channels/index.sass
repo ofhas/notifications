@@ -1,0 +1,41 @@
+@import "../_cmn"
+
+@keyframes fadein 
+  from 
+    opacity: 0
+  to 
+    opacity: 1
+
+
+.notifications
+  border: 1px solid #dddddd
+  border-radius: 5px
+  padding: 5px 10px
+  &__channels
+    border-right: #ddd 1px solid
+    flex: 20%
+  &__channel_chat
+    display: flex
+    flex: 80%
+  &__header
+    padding: 5px
+    background: #eeeeee
+    display: flex
+    justify-content: center
+    flex-direction: column
+    line-height: 28px
+  &__keyboard
+    display: flex
+    text-align: left
+    min-height: 62px
+    padding: 10px 15px
+  &__scrollable
+    min-height: 320 px
+    display: flex
+    flex-direction: column
+    flex: 1
+    overflow: scroll
+    &__trans
+      transition: opacity 0.1s
+    &__hidden
+      opacity: 0

@@ -1,0 +1,28 @@
+@import '../_cmn'
+
+$input-bottom-margin: 8px
+$input-border-size: 1px
+
+.app-input
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 0px 10px 0px 0px
+  &.fullWitdh
+      flex: 1
+  &__input
+    outline: none
+    width: 100%
+    padding: 0px 10px
+    text-align: left
+    border-radius: $common-border-radius
+    border: $input-border-size solid #ddd
+    height: $common-height-size
+    font-size: $common-font-size
+    &.error
+      border-color: red
+  &__label
+    margin-bottom: $input-bottom-margin
+  &__stretch
+    width: 100%
+    height: 100%

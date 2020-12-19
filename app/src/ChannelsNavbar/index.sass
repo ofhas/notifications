@@ -1,0 +1,46 @@
+@import "../_cmn.sass"
+
+.notifications
+  border: 1px solid #dddddd
+  border-radius: 5px
+  padding: 5px 10px
+  &__channels
+    background: $primary-color
+    &__header
+        padding: 5px
+        background: #eeeeee
+        display: flex
+        justify-content: center
+        flex-direction: column
+        line-height: 28px
+    &__body
+        flex: 1
+        overflow: scroll
+        &__button
+            padding: 0.25rem 0.25rem
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                border-bottom: 1px solid rgba(255,255,255,0.4)
+                bottom: 0
+                width: 70%
+                left: 15%
+            &:hover
+                opacity: 1
+                background-image: linear-gradient(90deg, #01A2FF, rgba(255,255,255,0.1), #01a2ff)
+            &__disabled
+                &:hover
+                    background-image: none
+                    cursor: default
+                    &:active
+                        opacity: 1
+                        cursor: default
+
+    &__footer
+        color: red
+        &__submit
+            display: flex
+            align-items: center
+            &__label
+                margin: 5px
